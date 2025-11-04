@@ -1,0 +1,160 @@
+/* === GLOBAL STYLE === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #fff !important;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-brand {
+  color: #ec1515 !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  color: #e3350d !important;
+}
+
+/*#header.bg-warning{
+  background-color: #ec1515;
+}*/
+
+
+/* === HERO SECTION === */
+.hero {
+  background: linear-gradient(90deg, #ffcb05 0%, #f11313 100%);
+  padding: 60px 0;
+  text-align: center;
+  color: #222;
+}
+
+.hero h1 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* === PRODUCT CARD === */
+.card {
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  border-radius: 8px 8px 0 0;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body h5 {
+  font-weight: 600;
+  color: #333;
+}
+
+.price {
+  color: #e3350d;
+  font-weight: 600;
+}
+
+/* === PRODUCT DETAIL === */
+.product-detail img {
+  border-radius: 12px;
+  max-height: 450px;
+  object-fit: contain;
+}
+
+.product-detail h2 {
+  color: #e3350d;
+  font-weight: 700;
+}
+
+.product-detail ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-detail li::before {
+  content: "⚡ ";
+}
+
+/* === BUTTONS === */
+.btn-warning {
+  background-color: #ffcb05;
+  border: none;
+  color: #222;
+  font-weight: 600;
+}
+
+.btn-warning:hover {
+  background-color: #f6b900;
+}
+
+.btn-secondary {
+  background-color: #e3350d;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #bf2b0a;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  border-top: 1px solid #eee;
+  color: #666;
+}
+
+/* === CONTACT FORM === */
+form input, form textarea {
+  border-radius: 8px !important;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+form button {
+  background-color: #ffcb05;
+  border: none;
+  color: #222;
+  font-weight: 600;
+}
+
+form button:hover {
+  background-color: #f6b900;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 0;
+  }
+
+  .product-detail img {
+    max-height: 300px;
+  }
+}
